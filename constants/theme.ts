@@ -10,20 +10,34 @@ const tintColorDark = '#fff';
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+    text: "#0f172a",
+    textSecondary: "#334155",
+    background: "#eef2f7",
+    surface: "#ffffff",
+    border: "#94a3b8",
+    tint: "#2563eb",
+    icon: "#64748b",
+    tabIconDefault: "#94a3b8",
+    tabIconSelected: "#2563eb",
+    danger: "#ef4444",
+    muted: "#64748b",
+    card: "#ffffff",
+    header: "#e2e8f0",
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+    text: "#ECEDEE",
+    textSecondary: "#9BA1A6",
+    background: "#151718",
+    surface: "#1f232a",
+    border: "#2d3139",
+    tint: "#ffffff",
+    icon: "#9BA1A6",
+    tabIconDefault: "#9BA1A6",
+    tabIconSelected: "#ffffff",
+    danger: "#f87171",
+    card: "#1a1d23",        // dark
+    muted: "#9ca3af",       // dark
+    header: "#1f232a",
   },
 };
 
@@ -51,3 +65,16 @@ export const Fonts = Platform.select({
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });
+
+export const PRESET_COLORS = [
+  "#ff0000", // red
+  "#ff7a00", // orange
+  "#ffd400", // yellow
+  "#00ff00", // green
+  "#00ffff", // cyan
+  "#007bff", // blue
+  "#8b5cf6", // purple
+  "#ff00ff", // magenta
+];
+
+export default Colors;
